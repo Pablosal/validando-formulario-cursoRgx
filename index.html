@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Validacion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita+Swashed&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="row image_back center_horizontal">
+    <form id="contact_form" class="col s12">
+      <div class="headForm">
+        <h3>Crear Cuenta</h3>
+      </div>
+      <div class="bodyForm center_vertical">
+        <div class="row">
+          <div class="input-field topic">
+            <label for="topic">Asunto de creación</label>
+            <input id="topic" type="text" class="validate" value="" required />
+            <i><small>Si es una queja coloque "Queja" al final del asunto</small></i>
+            <i><small>Si es una felicitacion coloque "Felicitacion" al Inicio del asunto</small></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <label for="first_name">Nombre</label>
+            <input id="first_name" type="text" class="validate" value="" required />
+            <i><small>Coloca tú nombre con apellido en mayusculas</small></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="validate" value="" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <label for="password">Contraseña</label>
+            <input id="password" type="password" class="validate" value="" required />
+            <div class="strength">
+            </div>
+            <ul>
+              <li class="criterios" data-criterio="crit-min5">
+                <small>
+                  Minimo 5 letras
+                </small>
+              </li>
+              <li class="criterios" data-criterio="crit-mayus">
+                <small>
+                  Debe contener una letra en Mayusculas
+                </small>
+              </li>
+              <li class="criterios" data-criterio="crit-num">
+                <small>
+                  Debe contener un numero
+                </small>
+              </li>
+              <li class="criterios" data-criterio="crit-symb">
+                <small>
+                  Debe contener un simbolo !"#$%&/()=?¿
+                </small>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button id="form_button" class="btn waves-effect waves-light" type="submit" name="action" >
+          Enviar Formulario
+        </button>
+      </div>
+    </form>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 3em;
+}
+
+input {
+  width: 400px;
+  height: 25px;
+  border: none;
+  margin: 5px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #8d30e6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  margin: 10px;
+}
+button:disabled{
+  background-color: dimgray;
+  color: darkgrey;
+}
+
+form {
+  background-color: #c8dbe8;
+  border-radius: 25px;
+  width: 600px !important;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.image_back {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: url(./pexels-krivec-ales-547114.jpg) center center no-repeat !important;
+  background-size: cover;
+}
+
+.headForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30%;
+  height: 30%;
+  width: 100%;
+}
+
+.headForm h3 {
+  margin: 25px;
+}
+
+.center_vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center_horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bar-show {
+  box-shadow: none;
+}
+
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.correcto::before {
+  content: "✅";
+  color: green;
+}
+.correcto {
+  color: green;
+}
+.incorrecto {
+  color: firebrick;
+}
+.incorrecto::before {
+  content: "❌";
+}
+/* <!-- Foto de Krivec Ales en Pexels */
